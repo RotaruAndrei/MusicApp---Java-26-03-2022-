@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/card_view_id">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background_view"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/card_image"
+                android:src="@drawable/ic_music_note_ic"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_title"
+                android:layout_gravity="center_vertical"
+                android:text="Music song"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:maxLines="@integer/material_motion_duration_long_1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
